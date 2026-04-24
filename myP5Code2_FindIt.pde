@@ -1,13 +1,22 @@
+// stars
 var starXPos = [];
 var starYPos = [];
 var star = "⭐️";
-var starTotal = 100;
+var starTotal = 1000;
 
+// planet
 var planetXPos = [];
 var planetYPos = [];
-var planet = "🪐";
-var planetTotal = 3;
-var planetFound = 0;
+var planet = "🪐🪐🪐";
+var planetTotal = 100;
+var planetFound = 50;
+
+// Sun
+var SunXPos = [];
+var SunYPos = [];
+var Sun = "☀️";
+var SunTotal = 100;
+var SunFound = 50;
 
 setup = function() {
    size(600, 450); 
@@ -73,6 +82,9 @@ var reset = function(){
   planetXPos = [];
   planetYPos = [];
   planetFound = 0;
+  sunXPos = [];
+  sunYPos = [];
+
 
 
   for(var i = 0; i < starTotal; i++){
